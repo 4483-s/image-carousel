@@ -2,31 +2,65 @@
 body {
   display: flex;
   justify-content: center;
-  height: 100vh;
   align-items: center;
-}
-.parent {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
 }
 .container {
   background-color: grey;
   aspect-ratio: 192 / 108;
-  width: 100%;
+  width: 1000px;
   overflow: hidden;
-}
-.imagediv {
   position: relative;
+}
+
+.imagediv {
   height: 100%;
   width: 400%;
   display: flex;
   right: 100%;
+  position: relative;
 }
 .imagediv img {
   height: 100%;
 }
-.utils {
+
+.arrows {
+  position: absolute;
   display: flex;
   justify-content: space-between;
+  background-color: yellow;
+  top: 45%;
+  width: 100%;
+  bottom: 45%;
+  height: 10%;
+  align-items: center;
+}
+.arrows button {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 60%;
+}
+.arrows button > img {
+  width: 100%;
+}
+.bottom {
+  position: absolute;
+  display: flex;
+  gap: 9px;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  padding: 0.2em;
+}
+.bottom button {
+  width: 1em;
+  aspect-ratio: 1 /1;
+  background-color: grey;
+  border: none;
+  border-radius: 50%;
+  display: flex;
 }
