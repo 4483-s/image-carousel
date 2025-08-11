@@ -3,21 +3,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background-color: black;
 }
 .container {
   background-color: grey;
   aspect-ratio: 192 / 108;
-  width: 1000px;
+  width: 1400px;
   overflow: hidden;
   position: relative;
 }
 
 .imagediv {
   height: 100%;
-  width: 400%;
   display: flex;
-  right: 100%;
   position: relative;
+  right: 200%;
 }
 .imagediv img {
   height: 100%;
@@ -27,7 +28,6 @@ body {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  background-color: yellow;
   top: 45%;
   width: 100%;
   bottom: 45%;
@@ -43,6 +43,8 @@ body {
   align-items: center;
   justify-content: center;
   max-height: 60%;
+  margin: 0 2em;
+  display: none;
 }
 .arrows button > img {
   width: 100%;
@@ -57,10 +59,13 @@ body {
   padding: 0.2em;
 }
 .bottom button {
-  width: 1em;
+  width: 20px;
   aspect-ratio: 1 /1;
   background-color: grey;
   border: none;
   border-radius: 50%;
   display: flex;
+}
+button.colored {
+  background-color: orangered;
 }
